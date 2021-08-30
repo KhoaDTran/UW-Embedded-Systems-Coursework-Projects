@@ -1,5 +1,5 @@
 # UW Embedded Systems Coursework and Projects
-## Computer Science Engineering Coursework at the University of Washington regarding embedded systems, hardware/software interfaces, and programming in C/C++
+## Computer Science Engineering coursework at the University of Washington regarding embedded systems, hardware/software interfaces, and programming in C/C++
 
 ### Introduction to Embedded Systems:
 Embedded systems coursework at the University of Washington, imposing a battery management system in C/C++ on a Arduino ATMega2560. Each lab in the coursework progresses upon each other, updating functionalities as well as implementation methods. Using a modern embedded microcomputer, acquired knowledge in TCBS/Scheduling, Kernels, Interrupts, Resource Sharing, Deadlocks, and concepts dealing with specification, design, development, and testing of real-time embedded systems software.
