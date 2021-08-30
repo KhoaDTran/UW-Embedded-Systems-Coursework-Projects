@@ -1,0 +1,33 @@
+********************
+* Lab 3 Reflection *
+********************
+Name: Khoa Tran
+ID: 1861460   
+
+
+-----------------------------------------------------------
+1) Explain: Segmentation fault is based on accessing memory that
+we should not have access to. The fillArray causes a
+segmentation fault because when %rbp gets pushed onto the stack
+but then is corrupted by filling the array. The segmentation fault happens
+at the leaveq command as once it is executed, the program ends
+with a segmentation fault.
+
+
+-----------------------------------------------------------
+2) Instruction 1: <part2 + 00>
+   Purpose: The push of the original value of %rbp onto the stack will
+   allow us to know if something has exceeded the boundaries and cause
+   segfault as it will reach the memory of %rbp
+
+   Instruction 2: <part2 + 18>
+   Purpose:  0x38 is the size of 14 integers, as 14 is the limit     
+
+   Minimum length to cause a seg fault: 15
+-----------------------------------------------------------
+3) Explain: No, it would not remove segmentation fault because the heap
+   could possibly collide with the stack and could be overwritten.
+
+
+
+-----------------------------------------------------------

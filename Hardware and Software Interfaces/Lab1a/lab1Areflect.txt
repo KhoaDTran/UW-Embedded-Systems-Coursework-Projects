@@ -1,0 +1,10 @@
+Khoa Tran
+CSE 351
+Lab1A Reflection
+
+1. Pointer arithmetic is useful because it deals with tranversing through memory, making sure to skip through the correct amount of bytes that stores the value declared. A pointer stores a location in memory that is associated to a certain variable like an array. 
+Pointer arithmetic allows for indexing through arrays and memory. The relationship between arrays and pointers is that an array is a series of pointers that are connected in memory
+and pointers of an array starts at the beginning of the array and with pointer arithmetic, can be traversed. (int* ptr = intArray)
+2. Pointer arithmetic of adding 1 to the previous pointer in order to get the difference between the two pointers. Also casting to a long int allows for accurate, full value of the difference without compiler warnings.
+3. The parameters have to be pointers because you can't just swap the value of two integers in storage without the location of the two integers. In order to change the value of a int variable, you have to change the value in the location in the memory, so without the pointers, the actual exchange wouldn't store and swap values.
+If the parameters were integers, then you would need to get the address of the variables before swapping. 

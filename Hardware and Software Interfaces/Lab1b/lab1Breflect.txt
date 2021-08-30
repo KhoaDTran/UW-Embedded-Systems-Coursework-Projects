@@ -1,0 +1,18 @@
+Khoa Tran
+CSE 351
+Lab1bReflect
+
+1. Benefits are being able to store 256 items instead of 10 in each section allowing for many more operations, accessing the number of items in a section is much easier,
+as it doesn't require bitwise operations such as shifting and much more in order to get the empty spaces or filled spaces. With a value, it would be easier to do simple math to figure out the 
+number of empty and filled spots. Another benefit is having more of a variety of items due to the item id being up to 256 instead of 64 as well. This
+representation allows for many items in the store and keeping track of each item and their inventory much easier.
+One drawback of this new representation is not being able to learn bitwise operations and manipulating binary representation and values as the previous 
+representation was able to teach us how to manipulate certain binary values, but the new representation would take away those neccessary functions that we 
+are needed to learn.
+2a. signed int
+b. int
+The difference in signed int and int is in the range of values that is has. Signed int goes from -2147483648 to 2147483647, but int goes from 0 to 4294967295.
+The amount of values are the same as they are both 4 byte varible sizes, however, the range of these values are different as one is signed and one is unsigned.
+3. a = 4194305.000000, b = 8388609.000000, c= 16777216.0000
+The values of a, b, and c are like that because when shifting 1 < 22 or 23 or 24 times, it is basically saying 2^23, or 2^24, or 2^22. These values
+are the decimal value of (float) 1 < 22, 23, 24. As a result, since a size of a float is 4 bytes, these values don't exceed the float range and is 1 + 2^22 for a and same for b and c. 
