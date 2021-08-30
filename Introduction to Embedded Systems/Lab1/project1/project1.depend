@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1610847564 source:c:\users\tynou\dropbox\college\junior\winter\cse 474\lab1\lab1\project1a-2021.c
+	<stdio.h>
+
+1610932233 source:c:\users\tynou\dropbox\college\junior\winter\cse 474\labs\lab1\app1.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
+1610934491 source:c:\users\tynou\dropbox\college\junior\winter\cse 474\labs\lab1\app2.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
+1610935460 source:c:\users\tynou\dropbox\college\junior\winter\cse 474\labs\lab1\app3.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
+1610935624 source:c:\users\tynou\dropbox\college\junior\winter\cse 474\labs\lab1\app4.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
+1610932233 source:c:\users\tynou\dropbox\college\junior\winter\cse 474\labs\lab1\app6_func.c
+	<stdio.h>
+	<time.h>
+	"app6_func.h"
+
+1610932233 c:\users\tynou\dropbox\college\junior\winter\cse 474\labs\lab1\app6_func.h
+
+1610932233 source:c:\users\tynou\dropbox\college\junior\winter\cse 474\labs\lab1\app5.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
+1611018213 source:c:\users\tynou\dropbox\college\junior\winter\cse 474\labs\lab1\project1\app2.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
