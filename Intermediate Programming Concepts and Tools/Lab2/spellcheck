@@ -1,0 +1,44 @@
+#Khoa Tran
+#HW2
+#Problem 4
+#04/19/2020
+
+if [ "$#" -ne 1 ]
+then
+echo "takes only one argument"
+exit 1
+fi
+
+if [ ! -f "$1" ]
+then
+echo "not a valid file"
+exit 1
+fi
+
+if [ -e "$1.spelling" ]
+then
+echo "./spellcheck replacing $1.spelling file"
+rm "$1.spelling"
+fi
+
+touch "$1.spelling"
+
+for line in `cat $1`
+do
+for word in $line
+do
+noNum=`echo "$word" | sed 's/[0-9]*//g'`
+noPunct=`echo "$noNum" | sed 's/[[:punct:]]//g'`
+if ! grep -q -i "$noPunct" /usr/share/dict/words
+then
+	((count=count+1))
+	if ! grep -q -i "$noPunct" "$1.spelling"
+	then
+	((num=num+1))
+	fi
+echo "$noPunct" >> "$1.spelling"
+fi
+done
+done
+echo "./spellcheck found $count spelling errors, out to file $1.spelling $num of the words are unique"
+exit 0

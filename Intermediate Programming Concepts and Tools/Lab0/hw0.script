@@ -1,0 +1,21 @@
+Script started on Sun 05 Apr 2020 12:42:31 AM PDT
+]777;notify;Command completed;exit]0;ktdt01@localhost:~/Desktop]7;file://localhost.localdomain/home/ktdt01/Desktop[?1034h[ktdt01@localhost Desktop]$ whomai
+bash: whomai: command not found
+]777;notify;Command completed;whomai]0;ktdt01@localhost:~/Desktop]7;file://localhost.localdomain/home/ktdt01/Desktop[ktdt01@localhost Desktop]$ whoami
+ktdt01
+]777;notify;Command completed;whoami]0;ktdt01@localhost:~/Desktop]7;file://localhost.localdomain/home/ktdt01/Desktop[ktdt01@localhost Desktop]$ echo $SHELL
+/bin/bash
+]777;notify;Command completed;echo $SHELL]0;ktdt01@localhost:~/Desktop]7;file://localhost.localdomain/home/ktdt01/Desktop[ktdt01@localhost Desktop]$ pwd
+/home/ktdt01/Desktop
+]777;notify;Command completed;pwd]0;ktdt01@localhost:~/Desktop]7;file://localhost.localdomain/home/ktdt01/Desktop[ktdt01@localhost Desktop]$ uname -a
+Linux localhost.localdomain 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+]777;notify;Command completed;uname -a]0;ktdt01@localhost:~/Desktop]7;file://localhost.localdomain/home/ktdt01/Desktop[ktdt01@localhost Desktop]$ gcc --version -std=c11
+gcc (GCC) 7.3.1 20180303 (Red Hat 7.3.1-5)
+Copyright (C) 2017 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+]777;notify;Command completed;gcc --version -std=c11]0;ktdt01@localhost:~/Desktop]7;file://localhost.localdomain/home/ktdt01/Desktop[ktdt01@localhost Desktop]$ exit
+exit
+
+Script done on Sun 05 Apr 2020 12:43:32 AM PDT

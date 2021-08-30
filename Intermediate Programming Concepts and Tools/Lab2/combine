@@ -1,0 +1,21 @@
+#Khoa Tran
+#HW2
+#Problem 3
+#04/19/2020
+
+if [ "$#" -lt 2]
+then
+echo "takes at least 2 arguments: both filenames" >&2
+exit 1
+fi
+if [ -e "$1" ]
+then 
+echo "Error: first file exist" >&2
+exit 1
+fi
+
+file="$1"
+shift
+
+cat "$@" 2> "$file"
+exit 0

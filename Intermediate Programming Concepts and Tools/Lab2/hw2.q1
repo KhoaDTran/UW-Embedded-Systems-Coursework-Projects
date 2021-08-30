@@ -1,0 +1,22 @@
+#Khoa Tran
+#HW2
+#Problem 1
+#04/19/2020
+
+echo PurpleAndGold
+#For the first command with echo, I did echo PurpleAndGold as the echo command displays a line of text.
+
+echo PurpleAndGold > PurpleAndGold
+cat result
+#For the second command cat, I first did echo PurpleAndGold > result and called on the cat command to view result as the cat command concatenate files or print on standard output. 
+
+ls PurpleAndGold
+#For the third command ls, as ls list the directory content so ls PurpleAndGold would only display that file name
+
+grep -w PurpleAndGold -f PurpleAndGold
+#For the fourth commands grep, it is a command that search text in given files and matching them. So I called grep with the word PurpleAndGold on the file PurpleAndGold.
+
+alias PurpleAndGold=''
+PurpleAndGold
+!!
+#For the last command, it outputs the previous command and its outputs so making PurpleAndGold a variable that contains nothing and calling the variable and the !! would just output PurpleAndGold

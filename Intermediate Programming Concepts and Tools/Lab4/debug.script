@@ -1,0 +1,69 @@
+Script started on Sun 03 May 2020 10:56:34 PM PDT
+]777;notify;Command completed;./gasp -i -n  aardvark text.txt text2.txt]0;ktdt01@localhost:~/cse374/HW/hw4]7;file://localhost.localdomain/home/ktdt01/cse374/HW/hw4[?1034h[ktdt01@localhost hw4]$ ./gasp -i -n  aardvark text.txt text2.txt[K text2.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K./gasp -i -n  aardvark text.txt text2.txt[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -std=c11 -o gasp gasp.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P./gasp -i -n  aardvark text.txt[7P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7@-i -n  [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -std=c11 -o gasp gasp.c[C[1@ [1@-[1@g
+]777;notify;Command completed;gcc -Wall -std=c11 -g -o gasp gasp.c]0;ktdt01@localhost:~/cse374/HW/hw4]7;file://localhost.localdomain/home/ktdt01/cse374/HW/hw4[ktdt01@localhost hw4]$ gdb gasp
+[?1034hGNU gdb (GDB) Red Hat Enterprise Linux 8.0.1-36.el7
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from gasp...done.
+(gdb) break main
+Breakpoint 1 at 0x4007e6: file gasp.c, line 34.
+(gdb) break 73
+Breakpoint 2 at 0x400984: file gasp.c, line 73.
+(gdb) run aardvark text.txt
+Starting program: /home/ktdt01/cse374/HW/hw4/gasp aardvark text.txt
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-292.el7.x86_64
+
+Breakpoint 1, main (argc=3, argv=0x7fffffffdb38) at gasp.c:34
+34	  char *matching_str = NULL;
+(gdb) p argv[1]
+$1 = 0x7fffffffdec1 "aardvark"
+(gdb) continue
+Continuing.
+
+Breakpoint 2, find_match (given_file=0x7fffffffdeca "text.txt", 
+    matching_str=0x7fffffffdec1 "aardvark", case_ignore=0, line_number=32767) at gasp.c:73
+73	  if (file_open) {
+(gdb) bt
+#0  find_match (given_file=0x7fffffffdeca "text.txt", 
+    matching_str=0x7fffffffdec1 "aardvark", case_ignore=0, line_number=32767) at gasp.c:73
+#1  0x00000000004008ed in main (argc=3, argv=0x7fffffffdb38) at gasp.c:49
+(gdb) list
+68	  char *str = matching_str;
+69	  char temp[INPUT_LIMIT];
+70	  char match[INPUT_LIMIT];
+71	  int number_line = 1;
+72	  FILE *file_open = fopen(given_file, "r");
+73	  if (file_open) {
+74	    for (int i = 0; i < strlen(str); i++) {
+75	      str[i] = tolower(str[i]);
+76	    }
+77	    while (fgets(temp, INPUT_LIMIT, file_open) != NULL) {
+(gdb) p given_file
+$2 = 0x7fffffffdeca "text.txt"
+(gdb) p file)[K_open
+$3 = (FILE *) 0x602010
+(gdb) continue
+Continuing.
+text.txt:and the next day the aardvark at
+
+text.txt:The aardvark had a great day after that
+
+text.txt:the most peaceful, but aardvarks
+
+[Inferior 1 (process 5050) exited normally]
+(gdb) quit
+]777;notify;Command completed;gdb gasp]0;ktdt01@localhost:~/cse374/HW/hw4]7;file://localhost.localdomain/home/ktdt01/cse374/HW/hw4[ktdt01@localhost hw4]$ exit
+exit
+
+Script done on Sun 03 May 2020 11:00:43 PM PDT

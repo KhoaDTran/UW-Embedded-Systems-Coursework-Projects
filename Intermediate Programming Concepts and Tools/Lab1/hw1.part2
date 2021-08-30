@@ -1,0 +1,12 @@
+1. Khoa Tran
+2. emacs
+3. wc prints the newliine, word, byte count for each file. Option -l print the count of newlines
+4. 35   67 1756 /etc/passwd
+5. kill
+6. The path of your home directory
+7. HOSTNAME stores the computer name and site name on a network, uses to distinguish devices within a local network. USER stores the name of the current user. Environmental variables are important because it help programs know what directory to install files in, where to store temporary files, and where to find user profile settings. 
+8. The find command and it would work by specifying which directory like home and the file name to search for. Finding files in a directory hierarchy.
+9. The which command is different because which locates executables in the system as in which allows for command names as arguments to get their path in the system.
+10. Those commands are different as the first command prints Hellow World! into a file name hello and the second command just prints Hellow World!
+11. It overwrites hello with deep breaths
+12. It adds to the end as in it appends relax to hello

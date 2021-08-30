@@ -1,0 +1,6 @@
+#Khoa Tran
+#HW2
+#Problem 2
+#04/19/2020
+
+alias private='chmod -R g=u,o-w'

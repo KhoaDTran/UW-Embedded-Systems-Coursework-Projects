@@ -1,0 +1,20 @@
+#Khoa Tran
+#CSE 374 Homework 3
+#Problem 1
+#04/26/2020
+
+if [ "$#" -ne 2 ]
+then
+	echo "takes two argument: one text output file and one html file"
+exit 1
+fi
+
+if [ ! -e  "$2" ]
+then
+	echo "html file doesn't exist"
+exit 1
+fi
+
+cat "$2" | grep -io 'http[s]*://courses[a-z.-]*/[a-z0-9]*/[a-z0-9]*/' | sed 's/$/20sp\//' | sort -u > "$1" 
+
+exit 0

@@ -1,0 +1,16 @@
+#Khoa Tran
+#CSE 374 Homework 3
+#Problem 5
+#04/26/2020
+
+2.
+For getcourses: ./getcourses courselist courses-index.html
+For perform-measurements: ./perform-measurement.sh http://courses.cs.washington.edu/courses/cse374/20sp/assignments/
+For run-analysis: ./run-analysis dataout courselist
+For part 4: ./scatterplot.R
+
+3.I filtered the requirments for the number of arguments and then used grep and sed to find the links for each CSE course, adding the 20sp at the end and deleting any duplicates. Then, with perform-measurments, I am able to obtain the byte count of each url. Finally, with run-analysis, I ran perform-measurements on each url and then got the course number assocaited with it and output it at the end.
+
+4.For courses that are higher level up, it seems like the index size is bigger for courses higher up. Besides that, there isn't a clear trend.
+
+5.The R script prints the number that is the average index size for all the urls in the dataout file. 

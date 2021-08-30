@@ -1,0 +1,95 @@
+Script started on Sun 12 Apr 2020 01:48:11 AM PDT
+]777;notify;Command completed;cat hello]0;ktdt01@localhost:~/cse374/HW]7;file://localhost.localdomain/home/ktdt01/cse374/HW[?1034h[ktdt01@localhost HW]$ echo 'Greetings, CSE 374'
+Greetings, CSE 374
+]777;notify;Command completed;echo 'Greetings, CSE 374']0;ktdt01@localhost:~/cse374/HW]7;file://localhost.localdomain/home/ktdt01/cse374/HW[ktdt01@localhost HW]$ date
+Sun Apr 12 01:48:23 PDT 2020
+]777;notify;Command completed;date]0;ktdt01@localhost:~/cse374/HW]7;file://localhost.localdomain/home/ktdt01/cse374/HW[ktdt01@localhost HW]$ passwd
+Changing password for user ktdt01.
+Changing password for ktdt01.
+(current) UNIX password: 
+New password: 
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+]777;notify;Command completed;passwd]0;ktdt01@localhost:~/cse374/HW]7;file://localhost.localdomain/home/ktdt01/cse374/HW[ktdt01@localhost HW]$ echo $HOME
+/home/ktdt01
+]777;notify;Command completed;echo $HOME]0;ktdt01@localhost:~/cse374/HW]7;file://localhost.localdomain/home/ktdt01/cse374/HW[ktdt01@localhost HW]$ cd ~
+]777;notify;Command completed;cd ~]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ ls
+[0m[38;5;27mcse374[0m  [38;5;27mDesktop[0m  [38;5;27mDownloads[0m
+]777;notify;Command completed;ls]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ mkdir temp
+]777;notify;Command completed;mkdir temp]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ mv temp HWFiles
+]777;notify;Command completed;mv temp HWFiles]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ cd HWFI[Kiles
+]777;notify;Command completed;cd HWFiles]0;ktdt01@localhost:~/HWFiles]7;file://localhost.localdomain/home/ktdt01/HWFiles[ktdt01@localhost HWFiles]$ date > now
+]777;notify;Command completed;date > now]0;ktdt01@localhost:~/HWFiles]7;file://localhost.localdomain/home/ktdt01/HWFiles[ktdt01@localhost HWFiles]$ cat now > before
+]777;notify;Command completed;cat now > before]0;ktdt01@localhost:~/HWFiles]7;file://localhost.localdomain/home/ktdt01/HWFiles[ktdt01@localhost HWFiles]$ ls -l
+total 8
+-rw-rw-r-- 1 ktdt01 ktdt01 29 Apr 12 01:49 before
+-rw-rw-r-- 1 ktdt01 ktdt01 29 Apr 12 01:49 now
+]777;notify;Command completed;ls -l]0;ktdt01@localhost:~/HWFiles]7;file://localhost.localdomain/home/ktdt01/HWFiles[ktdt01@localhost HWFiles]$ touch tmpdata
+]777;notify;Command completed;touch tmpdata]0;ktdt01@localhost:~/HWFiles]7;file://localhost.localdomain/home/ktdt01/HWFiles[ktdt01@localhost HWFiles]$ mv tmpdata test
+]777;notify;Command completed;mv tmpdata test]0;ktdt01@localhost:~/HWFiles]7;file://localhost.localdomain/home/ktdt01/HWFiles[ktdt01@localhost HWFiles]$ cd ../
+]777;notify;Command completed;cd ../]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ rm -r h[KHWFiles
+]777;notify;Command completed;rm -r HWFiles]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ echo 'Limited distru[Kiibut[K[K[K[K[K[K[K[K[Kistribution' >s[K secretfile
+]777;notify;Command completed;echo 'Limited distribution' > secretfile]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ ls -l
+total 16
+drwxrwxr-x 3 ktdt01 ktdt01 4096 Apr 12 01:47 [0m[38;5;27mcse374[0m
+drwxrwxr-x 2 ktdt01 ktdt01 4096 Apr 12 01:47 [38;5;27mDesktop[0m
+drwx------ 2 ktdt01 ktdt01 4096 Mar 23 10:40 [38;5;27mDownloads[0m
+-rw-rw-r-- 1 ktdt01 ktdt01   21 Apr 12 01:50 secretfile
+]777;notify;Command completed;ls -l]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ chmod -w secretfile
+]777;notify;Command completed;chmod -w secretfile]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ cat >> secretfile
+bash: secretfile: Permission denied
+]777;notify;Command completed;cat >> secretfile]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ chmod -r secretfile
+]777;notify;Command completed;chmod -r secretfile]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ cat c[Ksecre[K[K[K[Kecretfol[K[Kile
+cat: secretfile: Permission denied
+]777;notify;Command completed;cat secretfile]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ uname -a
+Linux localhost.localdomain 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+]777;notify;Command completed;uname -a]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ ps -u ktdt01
+   PID TTY          TIME CMD
+  2052 ?        00:00:00 sh
+  2066 ?        00:00:00 dbus-launch
+  2067 ?        00:00:00 dbus-daemon
+  2080 ?        00:00:00 ssh-agent
+  2113 ?        00:00:00 xfce4-session
+  2117 ?        00:00:00 xfconfd
+  2120 ?        00:00:00 gpg-agent
+  2122 ?        00:00:05 xfwm4
+  2126 ?        00:00:00 xfce4-panel
+  2128 ?        00:00:00 xfsettingsd
+  2129 ?        00:00:01 Thunar
+  2131 ?        00:00:01 xfdesktop
+  2137 ?        00:00:10 vmtoolsd
+  2139 ?        00:00:00 tracker-miner-a
+  2140 ?        00:00:00 xfce-polkit
+  2145 ?        00:00:00 tracker-extract
+  2148 ?        00:00:00 at-spi-bus-laun
+  2149 ?        00:00:00 tracker-miner-u
+  2157 ?        00:00:00 pulseaudio
+  2160 ?        00:00:00 dbus-daemon
+  2165 ?        00:00:00 gvfsd
+  2172 ?        00:00:00 at-spi2-registr
+  2185 ?        00:00:00 gvfsd-fuse
+  2192 ?        00:00:00 panel-6-systray
+  2195 ?        00:00:00 gvfs-udisks2-vo
+  2199 ?        00:00:00 panel-2-actions
+  2219 ?        00:00:00 gvfs-gphoto2-vo
+  2229 ?        00:00:00 gvfs-afc-volume
+  2235 ?        00:00:00 gvfsd-trash
+  2243 ?        00:00:00 gvfsd-metadata
+  2248 ?        00:00:00 tracker-store
+  2566 ?        00:00:00 gconfd-2
+  2611 ?        00:00:00 gvfsd-network
+  2618 ?        00:00:00 gvfsd-dnssd
+  2626 ?        00:00:00 dconf-service
+  4709 ?        00:00:00 xfce4-terminal
+  4713 ?        00:00:00 gnome-pty-helpe
+  4714 pts/0    00:00:00 bash
+  4813 pts/0    00:00:00 script
+  4815 pts/0    00:00:00 script
+  4816 pts/1    00:00:00 bash
+  5026 pts/1    00:00:00 ps
+]777;notify;Command completed;ps -u ktdt01]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ grep 'ktdt01' et[K[K/etc/passwd
+[01;31m[Kktdt01[m[K:x:1500:1500:[01;31m[Kktdt01[m[K:/home/[01;31m[Kktdt01[m[K:/bin/bash
+]777;notify;Command completed;grep 'ktdt01' /etc/passwd]0;ktdt01@localhost:~]7;file://localhost.localdomain/home/ktdt01[ktdt01@localhost ~]$ exit
+exit
+
+Script done on Sun 12 Apr 2020 01:51:26 AM PDT
